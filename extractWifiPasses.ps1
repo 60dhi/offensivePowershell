@@ -1,4 +1,8 @@
 #Created by 60dhi; Handle with Care and use at your own risk
+#Displays SSID along with the Saved Passwords of the WiFi profiles stored within Windows System
+#The script user must be an administrator in order for this script to work
+
+
 #extract all profiles
 $profileDetails = (netsh wlan show profiles | Select-String -Pattern "All User Profile")
 
